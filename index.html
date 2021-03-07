@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie" />
+    <title>Chúc Mừng Ngày 8-3</title>
+</head>
+
+<body>
+    <audio autoplay controls>
+        <source id="playAudio" type="audio/mp3" src="audio.mp3">
+    </audio>
+    <div class="section1" id="section1" style="display: flex">
+        <h1>Hi! Anh rất chào em!</h1>
+        <h3>Hãy nhận một niềm vui nho nhỏ </h3>
+        <h3>Ấn vào đồng ý nhé! 'Tuyệt đối' đừng ấn không.</h3>
+        <h4>Bên trên có nút bật nhạc đó ấn mà nghe</h4>
+        <br><br>
+        <div class="div-button" id="changed" style="justify-content: space-between;">
+            <button id="button1" type="button" onclick="click1()">Đồng ý</button>
+            <button id="button2" type="button" onclick="click2()">Không</button>
+        </div>
+    </div>
+    <div class="section2" id="section2" style="display: none">
+        <h3 class="h3Content">Hãy gõ bất kỳ thứ gì xuống đây.</h3>
+        <h3 class="h3Content">Những gì em xứng đáng được nhận sẽ hiện ra!</h3>
+        <input type="text" placeholder="Gõ vào đây!" onkeyup="keyupHandler(event)"><br><br>
+        <input type="text" id="content" style="font-size:25px;" placeholder="Không gõ vào đây!">
+    </div>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source type="video/mp4" src="videos.mp4" id="playAudio">
+        </video>
+    </div>
+</body>
+<script src="js.js"></script>
+
+</html>
